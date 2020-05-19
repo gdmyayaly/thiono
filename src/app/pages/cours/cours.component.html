@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-fluid">
     <section class="jumbotron">
         <div class="container-fluid">
             <h1 class="jumbotron-heading">Cours en ligne</h1>
@@ -10,10 +10,12 @@
         </div>
     </section>
 </div>
-<div class="container-fluid py-5 bg-light">
+
+
+<div class="container py-5 ">
     <div class="row">
         <div class="col-md-3 filtre">
-                    <h4>Titre1</h4>
+                    <h4>Toutes les formations</h4>
                     <section>
                         <mat-checkbox>
                             <span class="titre-section">HTML&CSS</span>
@@ -24,7 +26,7 @@
                             <span class="titre-section">PHP</span>
                         </mat-checkbox>
                     </section>
-                    <h4>Titre2</h4>
+                    <h4>Difficultés de la formation</h4>
                     <section>
                         <mat-checkbox>
                             <span class="titre-section">Débutant</span>
@@ -55,7 +57,7 @@
         <div class="col-md-9">
             <div class="row mb-3">
                 <div class="resultatstyle">
-                    Résultats&nbsp;: 25&nbsp;formation(s)
+                    Résultats&nbsp;: 9&nbsp;formation(s)
                 </div>
             </div>
             <div class="row" >
@@ -67,13 +69,13 @@
                             <h2 class="card-title">{{item.titre}}</h2>
                             <hr>
                             <p class="card-text niveauxtitre">
-                                <img src="assets/icon/interface.png" class="icone" alt="">
-                                <span class="infoscours">
-                                    Module(s) : <span>{{item.module}}</span>
+                                <img src="assets/icon/interface.png"  class="icone" alt="">
+                                <span class="module">
+                                    <span class="modules">Module(s) :</span> <span>{{item.module}}</span>
                                 </span>
                                 <img src="assets/icon/wall-clock.png" class="icone" alt="">
-                                <span class="infoscours">
-                                    Heure(s) : <span>{{item.heure}}</span>
+                                <span class="heure">
+                                   <span class="heures">Heure(s) :</span>  <span>{{item.heure}}</span>
                                 </span>
                             </p>
                             <p class="niveaux">
