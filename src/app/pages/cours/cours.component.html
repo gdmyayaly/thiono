@@ -5,7 +5,7 @@
             <p class="lead">
                 Découvrez toute une gamme de formations gratuites conçues pour vous aider à développer votre activité 
                 ou votre carrière. Vous pouvez vous former en sélectionnant des modules spécifiques ou en suivant un 
-                cours entier si vous le préférez..
+                cours entier si vous le préférez.
             </p>
         </div>
     </section>
@@ -21,11 +21,11 @@
                             <span class="titre-section">HTML&CSS</span>
                         </mat-checkbox>
                     </section>
-                    <section>
+                    <!-- <section>
                         <mat-checkbox>
                             <span class="titre-section">PHP</span>
                         </mat-checkbox>
-                    </section>
+                    </section> -->
                     <h4>Difficultés de la formation</h4>
                     <section>
                         <mat-checkbox>
@@ -62,7 +62,7 @@
             </div>
             <div class="row" >
                 <div class="col-md-6 col-lg-4 col-sm-12 mb-3 block" *ngFor="let item of alldata.cours">
-                    <a [routerLink]="['/onecours']" >
+                    <a href="javascript:void(0);" (click)="choice()">
                     <div class="card">
                         <img src="{{item.image}}" class="card-img-top" alt="...">
                         <div class="card-body">

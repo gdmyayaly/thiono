@@ -29,15 +29,10 @@
         <li class="nav-item dropdown" *ngIf="user.isconnecter">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                El Hadji Yaya LY
+                Apprenant
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">
-                    <i class="fa fa-user"></i> Profile
-                </a>
-                <div class="dropdown-divider"></div>
-
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" (click)="logout()" href="javascript:void(0);">
                     <i class="fa fa-lock"></i> Logout
                 </a>
             </div>

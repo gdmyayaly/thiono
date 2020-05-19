@@ -21,4 +21,8 @@ export class NavbarComponent implements OnInit {
       })
     })
   }
+  logout(){
+    localStorage.removeItem('token')
+    this.user.isconnecter=false;
+  }
 }
