@@ -1,0 +1,168 @@
+<div class="container">
+    <section class="jumbotron">
+        <div class="container-fluid">
+            <h1 class="jumbotron-heading">Cours en ligne</h1>
+            <p class="lead">
+                Découvrez toute une gamme de formations gratuites conçues pour vous aider à développer votre activité 
+                ou votre carrière. Vous pouvez vous former en sélectionnant des modules spécifiques ou en suivant un 
+                cours entier si vous le préférez..
+            </p>
+           
+        </div>
+    </section>
+</div>
+<div class="container-fluid py-5 bg-light">
+    <div class="row">
+        <div class="col-md-3 filtre">
+                    <h4>Titre1</h4>
+                    <section>
+                        <mat-checkbox>
+                            <span class="titre-section">HTML&CSS</span>
+                        </mat-checkbox>
+                    </section>
+                    <section>
+                        <mat-checkbox>
+                            <span class="titre-section">PHP</span>
+                        </mat-checkbox>
+                    </section>
+                    <h4>Titre2</h4>
+                    <section>
+                        <mat-checkbox>
+                            <span class="titre-section">Débutant</span>
+                        </mat-checkbox>
+                    </section>
+                    <section>
+                        <mat-checkbox>
+                            <span class="titre-section">Intermédiaire</span>
+                        </mat-checkbox>
+                    </section>
+                    <section>
+                        <mat-checkbox>
+                            <span class="titre-section">Difficile</span>
+                        </mat-checkbox>
+                    </section>
+        </div>
+        <div class="col-md-3 mobilefiltre">
+
+            <button class="btn" (click)="filtre()"> <svg class="toggle-filter-btn-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12">
+                <g fill="none" fill-rule="evenodd">
+                    <path fill="#3C4043" fill-rule="nonzero" d="M7 12h4v-2H7v2zM0 0v2h18V0H0zm3 7h12V5H3v2z"></path>
+                    <path d="M-3-6h24v24H-3z"></path>
+                </g>
+            </svg>
+            Filtre
+        </button>
+        </div>
+        <div class="col-md-9">
+            <div class="row mb-3">
+                <div class="resultatstyle">
+                    Résultats&nbsp;: 25&nbsp;formation(s)
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-md-6 col-lg-4 col-sm-12 mb-3 block" *ngFor="let item of alldata.cours">
+                    <a [routerLink]="['/onecours']" >
+                    <div class="card">
+                        <img src="{{item.image}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">{{item.titre}}</h2>
+                            <hr>
+                            <p class="card-text niveauxtitre">
+                                <img src="assets/icon/interface.png" class="icone" alt="">
+                                <span class="infoscours">
+                                    Module(s) : <span>{{item.module}}</span>
+                                </span>
+                                <img src="assets/icon/wall-clock.png" class="icone" alt="">
+                                <span class="infoscours">
+                                    Heure(s) : <span>{{item.heure}}</span>
+                                </span>
+                            </p>
+                            <p class="niveaux">
+                                <small class="text-red text-level">Niveau: <b>{{item.niveau}}</b></small>
+                            </p>
+                            <div class="row">
+                                <i class="rien material-icons">arrow_forward</i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">                    
+                    <div class="row">
+                        <div class="col-12">
+
+                            <div class="texttop">Toutes les categories</div>
+
+                            <div class="custom-control custom-checkbox custom-control-inline critere">
+                                <input type="checkbox" id="1" name="categories" value="1" class="custom-control-input elementFilter" />
+                                <label class="custom-control-label" for="1">HTML CSS</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline critere">
+                                <input type="checkbox" id="2" name="categories" value="2" class="custom-control-input elementFilter" />
+                                <label class="custom-control-label" for="2">PHP</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline critere">
+                                <input type="checkbox" id="3" name="categories" value="3" class="custom-control-input elementFilter" />
+                                <label class="custom-control-label" for="3">JAVASCRIPT</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="texttop">Difficulté de la formation</div>
+
+                            <div class="custom-control custom-checkbox custom-control-inline col-12 critere">
+                                <input type="checkbox" id="1" name="levels" value="Débutant" class="custom-control-input elementFilter" />
+                                <label class="custom-control-label" for="1">Débutant</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline col-12 critere">
+                                <input type="checkbox" id="2" name="levels" value="Débutant" class="custom-control-input elementFilter" />
+                                <label class="custom-control-label" for="2">Intermediare</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline col-12 critere">
+                                <input type="checkbox" id="3" name="levels" value="Débutant" class="custom-control-input elementFilter" />
+                                <label class="custom-control-label" for="3">Avancé</label>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row" id="modulefiltered">
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" data-src="https://via.placeholder.com/150" src="https://via.placeholder.com/150" alt="Card image cap">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <h5 class="card-title-course">Introduction à la programmation</h5>
+                                </div>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-red"><i class="fa fa-bars"></i> Module(s) : <b>2</b></small>
+                                    <small class="text-red"><i class="fa fa-clock"></i> Heure(s) : <b>6</b></small>
+
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-red text-level">Niveau: <b>Débutant</b></small>
+                                </div>
+<div class="row">
+    <span class="fleche"><i class="fa fa-home"></i></span>
+</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div> -->

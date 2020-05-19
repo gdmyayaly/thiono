@@ -1,0 +1,59 @@
+.sba_text_content{
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Google Sans,Arial,sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2rem;
+    letter-spacing: normal;
+    color: #9aa0a6;
+    font-weight: 400;
+}
+h2.etapes-titre {
+    text-align: center;
+    color: #4d5055;
+    font-family: Google Sans,Arial,sans-serif;
+    margin: 4.5rem 0 3.5rem;
+    font-size: 3.2rem;
+}
+.card-title-course{
+    height: 4rem;
+}
+.card{
+    height: 30rem;
+}
+.col-md-4.etapes-contenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+img.etapes-img {
+    width: auto;
+    height: 5rem;
+    display: block;
+    margin-right: 30px;
+    margin-top: -15px;
+}
+h3.etapes-contenu-titre {
+    margin: 0 0 1.5rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #414141;
+}
+h2.text-center {
+    margin: 4rem 0 3rem;
+    font-size: 2rem;
+}
+.etapes{
+    margin-bottom: 50px;
+}
+    .boutton{
+        background-color: #FF4080;
+    }
+    a{
+        color: black;
+    }

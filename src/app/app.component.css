@@ -1,0 +1,7 @@
+.decalage{
+    margin-top: 100px;
+    /* top: 0; */
+    /* position: absolute; */
+    /* right: 0; */
+    width: calc(100%-200px);
+}
