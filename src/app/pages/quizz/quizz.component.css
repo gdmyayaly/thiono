@@ -23,7 +23,7 @@
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
-    margin-right: 30px;
+    margin-right: 70px;
 }
 
 .titre1{
@@ -154,3 +154,19 @@
               text-decoration: none;
               color: black;
           }
+
+
+.jumbotron{
+    background-color: rgb(126, 126, 126);
+}
+
+.th{
+    background-color: #FF4080;
+}
+
+.termine{
+    background-color: #FF4080;
+    color: white;
+    padding:10px;
+    
+}

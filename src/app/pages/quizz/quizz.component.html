@@ -7,8 +7,6 @@
                 <h1 class="h">{{question.id}}/10</h1>
             </div>
             <div class="col-md-5"></div>
-
-
         </div>
 
         <div class="row">
@@ -65,7 +63,7 @@
 
     </div>
 </div>
-<div class="container" *ngIf="!isgame">
+<div class="container-fluid" *ngIf="!isgame">
     <div class="jumbotron">
         <h1 class="jumbotron-heading text-white">Quiz Module:1</h1>
         <p class="lead text-white">
@@ -83,10 +81,10 @@
                 <table class="table table-hover table-responsive" >
                     <thead>
                         <tr>
-                            <th>Question No.</th>
-                            <th>Bonne reponse</th>
-                            <th>Votre reponse</th>
-                            <th>Resultat</th>
+                            <th class="th">Question No.</th>
+                            <th class="th">Bonne reponse</th>
+                            <th class="th">Votre reponse</th>
+                            <th class="th">Resultat</th>
                         </tr>
                     </thead>
                     <tbody >
@@ -101,7 +99,9 @@
             </div>
         </div>
     </div>
-    <div class="row"><h1>end</h1></div>
+    <div class="row"> <a routerLink="/lesson" class="termine module-info__link">
+        Terminé
+       </a></div>
 </div>
 </div>
 </div>
