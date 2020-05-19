@@ -11,6 +11,7 @@ import {MaterialModule} from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FiltremobileComponent } from './pages/filtremobile/filtremobile.component';
 import { OnecourComponent } from './pages/onecour/onecour.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { OnecourComponent } from './pages/onecour/onecour.component';
     HomesComponent,
     CoursComponent,
     FiltremobileComponent,
-    OnecourComponent
+    OnecourComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
