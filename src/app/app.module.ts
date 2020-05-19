@@ -13,6 +13,7 @@ import { FiltremobileComponent } from './pages/filtremobile/filtremobile.compone
 import { OnecourComponent } from './pages/onecour/onecour.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LessonComponent } from './pages/lesson/lesson.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CoursComponent,
     FiltremobileComponent,
     OnecourComponent,
-    LoginComponent
+    LoginComponent,
+    LessonComponent
   ],
   imports: [
     BrowserModule,
