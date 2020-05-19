@@ -5,6 +5,14 @@
     padding-right: 40px;
     text-align: left;
 }
+
+.lead{
+  margin-bottom: 30px;
+}
+
+.jumbotron-heading{
+  font-size: 30px;
+}
 .fa.details{
   color: #FA4640;
   font-size:20px !important;

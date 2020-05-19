@@ -11,6 +11,10 @@
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5), 0px 2px 3px rgba(255, 255, 255, 0.2) inset;
     border: 1px solid rgba(0, 0, 0, 0.2);
   }
+
+  .video{
+    margin-top: -105px;
+  }
   .widget canvas,
   .widget .labels {
     position: absolute;
@@ -207,7 +211,7 @@ h1.lesson-module-title {
 .container-fluid.lesson-top{
   height: 200px;
     padding: 40px 80px 48px;
-    background-color: #4540DB;
+    background-color: rgb(129, 129, 129);
     color: white;
 }
 
@@ -334,10 +338,20 @@ span.list-group-item {
     
 }
 span.list-group-item {
-    background-color: #4540DB;
+    background-color: #FF4080;
     color: white;
 }
 
+.tester{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 150px;
+
+  background-color: #FF4080;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
 a.disabled{
   pointer-events: none;
   background: #9aa0a6;
