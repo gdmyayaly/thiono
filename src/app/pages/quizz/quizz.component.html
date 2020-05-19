@@ -1,67 +1,107 @@
-
-<div class="container" id="titrepage">
-    <div class="card col-xs-6 col-sm-12 col-md-12 ">
-            
-            <div class="row">
-                <a class="nav-link" href="index.html"><img src="images/growacademy (1).png" alt="" height="100px"></a>
-
-                <div class="col-md-4"></div>
-                <div class="num col-md-4">
-                    <h1 class="h">1/10</h1>
-                </div>
-                <div class="col-md-5"></div>
-          
-          
+<div class="container" id="titrepage" *ngIf="isgame">
+    <div class="card col-xs-6 col-sm-12 col-md-12">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="num col-md-4"
+                style="background-image: url('assets/rt.jpg');height: 180px;background-repeat: no-repeat;">
+                <h1 class="h">{{question.id}}/10</h1>
             </div>
-        
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="t col-md-8">
-                    <span class="titre1">C'est quoi Internet ?</span>
-                </div>
-                <div class="col-md-2"></div>
-            
-            
-            </div>
-            <br>
-    <div class="row">
-        <div class="col-md-3 col-lg-12 block0 ">
+            <div class="col-md-5"></div>
 
-            <div class="card ">
-                <div class="blockimage">
 
-                    <img src="image/q1c.png" alt="" class="image1">
-                </div>
-                <div class="card-body col-md-8  blocktexte">
-                    <h6>Un réseau téléphonique permettant de relier les personnes</h6>
-                </div>
-            </div>
         </div>
 
-        
-        <div class="col-md-3 col-lg-12 block0 ">
-            <div class="card ">
-                <div class="blockimage">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="t col-md-8">
+                <span class="titre1">{{question.titre}}</span>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3 col-lg-12 block0 ">
 
-                    <img src="image/q1b.png" alt="" class="image1">
-                </div>
-                <div class="card-body col-md-8 blocktexte">
-                    <h6>Un réseau mondial permettant de connecter tous les ordinateurs entre</h6>
+                <div class="card">
+                    <a href="javascript:void(0)" (click)="rep(question.titre1)">
+                    <div class="blockimage">
+                        <img src="{{question.image1}}" alt="" class="image1">
                     </div>
+                    <div class="card-body col-md-8  blocktexte">
+                        <h6>{{question.titre1}}</h6>
+                    </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-md-3 col-lg-12 block0 ">
+                <div class="card ">
+                    <a href="javascript:void(0)" (click)="rep(question.titre2)">
+                    <div class="blockimage">
+
+                        <img src="{{question.image2}}" alt="" class="image1">
+                    </div>
+                    <div class="card-body col-md-8 blocktexte">
+                        <h6>{{question.titre2}}</h6>
+                    </div>
+                </a>
+                </div>
+            </div>
+            <br><br>
+            <div class="col-md-3 col-lg-12 block0 ">
+                <div class="card ">
+                    <a href="javascript:void(0)" (click)="rep(question.titre3)">
+                    <div class="blockimage1">
+                        <img src="{{question.image3}}" alt="" class="image1">
+                    </div>
+                    <div class="card-body col-md-8 blocktexte">
+                        <h6>{{question.titre3}}</h6>
+                    </div>
+                </a>
+                </div>
             </div>
         </div>
-        <br><br>
-        <div class="col-md-3 col-lg-12 block0 ">
-            <div class="card ">
-                <div class="blockimage1">
-                    <img src="image/q1a.png" alt="" class="image1">
-                </div>
-                <div class="card-body col-md-8 blocktexte">
-                    <h6>un réseau mobile</h6>
-                </div>
+
+    </div>
+</div>
+<div class="container" *ngIf="!isgame">
+    <div class="jumbotron">
+        <h1 class="jumbotron-heading text-white">Quiz Module:1</h1>
+        <p class="lead text-white">
+          Testez vos connaissances avant de passer au module suivant
+        </p>
+      </div>
+     <div class="container">
+<div class="container quiz">
+
+    <div class="row mt-5">
+        <div class="col-sm-8 col-sm-offset-2">
+            <div id="result-of-question" class="pulse animated">
+                <span id="totalCorrect" class="pull-right"></span>
+                <span id="percentage" class="pull-right"></span>
+                <table class="table table-hover table-responsive" >
+                    <thead>
+                        <tr>
+                            <th>Question No.</th>
+                            <th>Bonne reponse</th>
+                            <th>Votre reponse</th>
+                            <th>Resultat</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        <tr *ngFor="let item of data">
+                            <th>{{item.titre}}</th>
+                            <th>{{item.good}}</th>
+                            <th>{{item.youresponse}}</th>
+                            <th>{{item.etat}}</th>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
-
+    <div class="row"><h1>end</h1></div>
+</div>
 </div>
 </div>
