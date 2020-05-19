@@ -1,3 +1,4 @@
+import { AlldataService } from './../../service/alldata.service';
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 
@@ -8,7 +9,7 @@ import * as $ from 'jquery';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public user:AlldataService) { }
 
   ngOnInit(): void {
     this.showmenu();

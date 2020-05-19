@@ -14,6 +14,12 @@ export class AlldataService {
     {id:7,image:'assets/images/formation.png',titre:'Formation 7',module:'5',heure:'3',niveau:'Difficile'},
     {id:8,image:'assets/images/formation.png',titre:'Formation 8',module:'5',heure:'3',niveau:'Débutant'},
     {id:9,image:'assets/images/formation.png',titre:'Formation 9',module:'5',heure:'3',niveau:'Intermédiaire'},
-  ]
+  ];
+  public isconnecter:boolean=false;
   constructor() { }
+  cargementpage(){
+    if (localStorage.getItem('token')) {
+      this.isconnecter=true;
+    }
+  }
 }
