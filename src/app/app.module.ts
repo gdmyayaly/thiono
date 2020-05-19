@@ -14,6 +14,7 @@ import { OnecourComponent } from './pages/onecour/onecour.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LessonComponent } from './pages/lesson/lesson.component';
+import { QuizzComponent } from './pages/quizz/quizz.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { LessonComponent } from './pages/lesson/lesson.component';
     FiltremobileComponent,
     OnecourComponent,
     LoginComponent,
-    LessonComponent
+    LessonComponent,
+    QuizzComponent
   ],
   imports: [
     BrowserModule,

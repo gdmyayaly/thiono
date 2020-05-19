@@ -1,0 +1,376 @@
+.widget {
+    text-align: left;
+    overflow: hidden;
+    margin: 64px;
+    background: #004c00;
+    border-radius: 9px;
+    height: 260px;
+    width: 330px;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5), 0px 2px 3px rgba(255, 255, 255, 0.2) inset;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .widget canvas,
+  .widget .labels {
+    position: absolute;
+    text-align: center;
+    width: 330px;
+    height: 260px;
+  }
+  .widget .labels {
+    color: white;
+    margin-top: 48px;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    font-weight: 100;
+  }
+  .widget .labels h2 {
+    font-weight: 100;
+    font-size: 50px;
+    margin-bottom: 0px;
+    margin-top:20px;
+  }
+  
+  h2.fonctionnement_titre {
+    margin-bottom: 48px;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+p.fonctionnement_boite {
+  font-family: Google Sans,Arial,sans-serif;
+  /* font-size: 1.8rem; */
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5rem;
+  letter-spacing: normal;
+  text-align: center;
+  color: #9aa0a6;
+}
+
+.fonctionnement_box:after {
+  top: 50%;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border: 13px solid transparent;
+  border-left-color: #34a853;
+  margin-top: -13px;
+  margin-left: -6px;
+  left: 100%;
+  right: auto;
+}
+.fa.detail{
+  color: #34a853;
+  font-size:20px !important;
+  padding: 0 7px;
+}
+
+.fa.details{
+  color: #f9ab00;
+  font-size:20px !important;
+  padding: 0 7px;
+
+}
+
+span.detail_cours_titre {
+  text-transform: uppercase;
+    font-family: Google Sans,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 16px;
+    letter-spacing: 1.25px;
+    color: #80868b;
+}
+
+span.detail_cours_contenu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 30px;
+  opacity: .9;
+  font-family: Google Sans,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: #5f6368;
+}
+
+p.a_propos_desc {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Google Sans,Arial,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.67;
+  letter-spacing: normal;
+  padding-right: 135px;
+  margin-top: 20px;
+  color: #9aa0a6;
+  position: relative;
+}
+
+/* Taulation Menu*/
+
+.nav-tabs {
+  padding: 0 6em !important;
+}
+a#nav-home-tab {
+  margin: 0 30px;
+  display: grid;
+  line-height: 3em;
+  
+  text-align: center;
+  border:0;
+}
+
+a#nav-home-tab :active{
+  color: #34a853 !important;
+}
+a#nav-profile-tab {
+  margin: 0 30px;
+  display: grid;
+  text-align: center;
+  color:gray;
+  border:0;
+}
+a#nav-profile-tab:hover {
+  margin: 0 30px;
+  color: #34a853;
+  line-height: 3em;
+}
+a#nav-profile-tab:active{
+  margin: 0 30px;
+  line-height: 3em;
+  color: #34a853;;
+}
+a#nav-contact-tab {
+  margin: 0 30px;
+  line-height: 3em;
+  color:gray;
+  text-align: center;
+  display: grid;
+  border:0;
+}
+
+a#nav-contact-tab:hover {
+  margin: 0 30px;
+  line-height: 3em;
+  color: #34a853;;
+}
+
+a#nav-contact-tab:active{
+  margin: 0 30px;
+  line-height: 3em;
+  color: #34a853;;
+}
+a#nav-com-tab {
+  margin: 0 30px;
+  line-height: 3em;
+  color:gray;
+  text-align: center;
+  display: grid;
+  border:0;
+}
+
+a#nav-com-tab:hover {
+  margin: 0 30px;
+  line-height: 3em;
+  color: #34a853;;
+}
+
+div.tab-pane.fade{
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+h1.lesson-module-title {
+    
+    font-size: 3.2rem!important;
+    line-height: 1.25!important;
+    letter-spacing: normal!important;
+    margin-top: 8px;
+}
+
+.container-fluid.lesson-top{
+  height: 200px;
+    padding: 40px 80px 48px;
+    background-color: #4540DB;
+    color: white;
+}
+
+h2.lesson-sidebar {
+    background: #f5f5f5;
+    color: rgba(0,0,0,.54);
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    padding: 1.6rem 0 1.6rem 2rem;
+}
+
+
+.fa.details{
+  color: #f9ab00;
+  font-size:20px !important;
+  padding: 0 7px;
+
+}
+.far.details{
+  color: #f9ab00;
+  font-size:20px !important;
+  padding: 0 7px;
+
+}
+
+span.detail_cours_contenu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 30px;
+  opacity: .9;
+  font-family: Google Sans,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: #5f6368;
+}
+
+
+nav.sidebar {
+    -webkit-transition: margin 200ms ease-out;
+      -moz-transition: margin 200ms ease-out;
+      -o-transition: margin 200ms ease-out;
+      transition: margin 200ms ease-out;
+  }
+
+.bkgnd {
+    background-color: #d9edf7;
+    color:#428bca;
+}
+
+.colsm12{
+    position: relative;
+    min-height: 1px;
+    width: 100%;
+    float: left;
+}
+
+
+  .mini-submenu{
+  display:none;  
+  background-color: #BB6BD9;  
+  border: 1px solid #BB6BD9;
+  border-radius: 4px;
+  padding: 9px;  
+  /*position: relative;*/
+  width: 42px;
+
+}
+
+.mini-submenu:hover{
+  cursor: pointer;
+}
+
+.mini-submenu .icon-bar {
+  border-radius: 1px;
+  display: block;
+  height: 2px;
+  width: 22px;
+  margin-top: 3px;
+}
+
+.mini-submenu .icon-bar {
+  background-color: #000;
+}
+
+#slide-submenu{
+  background: rgba(0, 0, 0, 0.45);
+  display: inline-block;
+  padding: 0 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+span.list-group-item {
+    padding: 20px;
+    text-transform: capitalize;
+    font-size: 1em;
+    text-align: center;
+}
+.list-group-item.active {
+    z-index: 2;
+    line-height: 23px;
+    font-weight: 300;
+    color: #898383;
+    border: 0;
+    font-size: 20px;
+    font-family: Roboto;
+    background-color: #ececec;
+
+}
+.list-group-item {
+    z-index: 2;
+    line-height: 23px;
+    font-weight: 300;
+    color: #898383;
+    border: 0;
+    font-size: 20px;
+    font-family: Roboto;
+    background-color: #fcfcfc;
+    
+}
+span.list-group-item {
+    background-color: #4540DB;
+    color: white;
+}
+
+a.disabled{
+  pointer-events: none;
+  background: #9aa0a6;
+}
+
+
+@media screen and (min-width:320px) and (max-width:978px){
+h1.lesson-module-title {
+    font-size: 2.2rem!important;
+    line-height: 1.25!important;
+    letter-spacing: normal!important;
+    margin-top: 8px;
+}
+
+iframe {
+    width: 370px !important;
+}
+
+p.a_propos_desc {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Google Sans,Arial,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    padding-right: 135px;
+    margin-top: 20px;
+    color: #9aa0a6;
+    position: relative;
+}
+}
+ 

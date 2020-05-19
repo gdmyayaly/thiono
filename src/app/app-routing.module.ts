@@ -5,6 +5,7 @@ import { HomesComponent } from './pages/homes/homes.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LessonComponent } from './pages/lesson/lesson.component';
+import { QuizzComponent } from './pages/quizz/quizz.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path:'cours',component:CoursComponent},
   {path:'onecours',component:OnecourComponent},
   {path:'login',component:LoginComponent},
-  {path:'lesson',component:LessonComponent}
+  {path:'lesson',component:LessonComponent},
+  {path:'quizz',component:QuizzComponent}
 ];
 
 @NgModule({
