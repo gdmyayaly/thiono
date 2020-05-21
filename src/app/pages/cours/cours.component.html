@@ -1,6 +1,6 @@
-<div class="container-fluid">
+<div class="container">
     <section class="jumbotron">
-        <div class="container-fluid">
+        <div class="container">
             <h1 class="jumbotron-heading">Cours en ligne</h1>
             <p class="lead">
                 Découvrez toute une gamme de formations gratuites conçues pour vous aider à développer votre activité 
@@ -16,7 +16,7 @@
     <div class="row">
         <div class="col-md-3 filtre">
                     <h4>Toutes les formations</h4>
-                    <section>
+                    <section class="section1">
                         <mat-checkbox>
                             <span class="titre-section">HTML&CSS</span>
                         </mat-checkbox>
@@ -26,6 +26,7 @@
                             <span class="titre-section">PHP</span>
                         </mat-checkbox>
                     </section> -->
+                    
                     <h4>Difficultés de la formation</h4>
                     <section>
                         <mat-checkbox>
@@ -57,7 +58,7 @@
         <div class="col-md-9">
             <div class="row mb-3">
                 <div class="resultatstyle">
-                    Résultats&nbsp;: 1&nbsp;formation(s)
+                    Résultats&nbsp;: 3&nbsp;formation(s)
                 </div>
             </div>
             <div class="row" >
@@ -66,14 +67,14 @@
                     <div class="card">
                         <img src="{{item.image}}" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h2 class="card-title">{{item.titre}}</h2>
+                            <h3 class="card-title">{{item.titre}}</h3>
                             <hr>
                             <p class="card-text niveauxtitre">
                                 <img src="assets/icon/interface.png"  class="icone" alt="">
                                 <span class="module">
                                     <span class="modules">Module(s) :</span> <span>{{item.module}}</span>
                                 </span>
-                                <img src="assets/icon/wall-clock.png" class="icone" alt="">
+                                <img src="assets/icon/wall-clock.png"   class="icone" alt="">
                                 <span class="heure">
                                    <span class="heures">Heure(s) :</span>  <span>{{item.heure}}</span>
                                 </span>

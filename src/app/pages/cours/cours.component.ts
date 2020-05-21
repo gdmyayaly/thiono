@@ -34,7 +34,7 @@ export class CoursComponent implements OnInit {
   choice(){
     
     if (localStorage.getItem('token')) {
-      this.router.navigate(['/lesson']);
+      this.router.navigate(['/onecour']);
     }
     else{
       this.router.navigate(['login'])

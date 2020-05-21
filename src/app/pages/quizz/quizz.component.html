@@ -1,9 +1,41 @@
+<style>
+
+.num{
+    background-image: url('assets/rt.jpg');
+    height: 180px;
+    background-repeat: no-repeat;
+}
+
+@media(max-width:768px){
+.titre1{
+    font-size: 25px;
+    margin: auto;
+}
+.num{
+  font-size: 100px;  
+  background-image: url('assets/rt.jpg');
+  height: 160px;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+}
+.h{
+    font-size: 45px;
+    margin: auto;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+
+}
+    
+</style>
+
 <div class="container" id="titrepage" *ngIf="isgame">
     <div class="card col-xs-6 col-sm-12 col-md-12">
         <div class="row">
             <div class="col-md-4"></div>
             <div class="num col-md-4"
-                style="background-image: url('assets/rt.jpg');height: 180px;background-repeat: no-repeat;">
+                >
                 <h1 class="h">{{question.id}}/10</h1>
             </div>
             <div class="col-md-5"></div>
@@ -13,6 +45,9 @@
             <div class="col-md-2"></div>
             <div class="t col-md-8">
                 <span class="titre1">{{question.titre}}</span>
+                <p class="titre11">{{question.titre}}</p>
+
+
             </div>
             <div class="col-md-2"></div>
         </div>
@@ -20,7 +55,7 @@
         <div class="row">
             <div class="col-md-3 col-lg-12 block0 ">
 
-                <div class="card">
+                <div class="card carte">
                     <a href="javascript:void(0)" (click)="rep(question.titre1)">
                     <div class="blockimage">
                         <img src="{{question.image1}}" alt="" class="image1">
@@ -34,7 +69,7 @@
 
 
             <div class="col-md-3 col-lg-12 block0 ">
-                <div class="card ">
+                <div class="card carte ">
                     <a href="javascript:void(0)" (click)="rep(question.titre2)">
                     <div class="blockimage">
 
@@ -48,7 +83,7 @@
             </div>
             <br><br>
             <div class="col-md-3 col-lg-12 block0 ">
-                <div class="card ">
+                <div class="card carte">
                     <a href="javascript:void(0)" (click)="rep(question.titre3)">
                     <div class="blockimage1">
                         <img src="{{question.image3}}" alt="" class="image1">
@@ -60,6 +95,54 @@
                 </div>
             </div>
         </div>
+
+        <!-- Version mobile -->
+        <div class="container-fluid blockmobile">
+
+             <div class="one">
+
+                <div class="row card blocmbacke  mt-3">
+                    <div class="col-7 col-sm-7" (click)="rep(question.titre1)">
+                        <img src="{{question.image1}}" alt="" class="image1">
+
+                    </div>
+                    <div class="  col-5 col-sm-5" (click)="rep(question.titre1)">
+                        <h6 class="titre">{{question.titre1}}</h6>
+
+                    </div>
+                </div>
+                <div class="row card blocmbacke mt-3">
+                    <div class="col-7 col-sm-7" (click)="rep(question.titre2)">
+                        <img src="{{question.image2}}" alt="" class="image1">
+
+                    </div>
+                    <div class="  col-5 col-sm-5" (click)="rep(question.titre1)">
+                        <h6 class="titre">{{question.titre2}}</h6>
+
+                    </div>
+                </div>
+                <div class="row card blocmbacke mt-3 ">
+                    <div class="col-7 col-sm-7" (click)="rep(question.titre3)">
+                        <img src="{{question.image3}}" alt="" class="image1">
+
+                    </div>
+                    <div class="  col-5 col-sm-5" (click)="rep(question.titre3)">
+                        <h6 class="titre">{{question.titre3}}</h6>
+
+                    </div>
+                </div>
+
+             </div>
+
+
+
+
+
+
+
+        </div>
+
+        <!-- fin Version mobile -->
 
     </div>
 </div>

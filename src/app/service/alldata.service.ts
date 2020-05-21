@@ -5,7 +5,10 @@ import { Injectable } from '@angular/core';
 })
 export class AlldataService {
   public cours=[
-    {id:1,image:'assets/images/dev.png',titre:'INTRODUCTION DEVELOPPEMENT WEB',module:'2',heure:'3',niveau:'Débutant'},
+    {id:1,image:'assets/images/dev.png',titre:'Création de site vitrine simple',module:'8',heure:'30',niveau:'Débutant'},
+    // {id:1,image:'assets/images/dev.png',titre:'Création de site dynamique',module:'8',heure:'30',niveau:'Intermediaire'},
+    // {id:1,image:'assets/images/dev.png',titre:'Création de micro-application',module:'8',heure:'30',niveau:'Avancée'},
+
   ];
   public modules=[
     {id:1,titre:'',chapitre:[]}

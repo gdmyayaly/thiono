@@ -11,7 +11,7 @@ import { QuizzComponent } from './pages/quizz/quizz.component';
 const routes: Routes = [
   {path:'',component:HomesComponent},
   {path:'cours',component:CoursComponent},
-  {path:'onecours',component:OnecourComponent},
+  {path:'onecour',component:OnecourComponent},
   {path:'login',component:LoginComponent},
   {path:'lesson',component:LessonComponent},
   {path:'quizz',component:QuizzComponent}

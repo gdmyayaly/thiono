@@ -200,19 +200,22 @@ div.tab-pane.fade{
   margin-top: 10px;
 }
 
-h1.lesson-module-title {
-    
-    font-size: 3.2rem!important;
-    line-height: 1.25!important;
+.lesson-module-title {
+    text-align: center;
+    font-size: 50px;
+     /* font-size: 3.2rem!important; */
+     text-indent: 10px; 
+    /*line-height: 1.25!important;
     letter-spacing: normal!important;
-    margin-top: 8px;
+    margin-top: 8px; */
 }
 
-.container-fluid.lesson-top{
-  height: 200px;
-    padding: 40px 80px 48px;
+.lesson-top{
+  height: 150px;
+    /* padding: 40px 80px 48px; */
     background-color: rgb(129, 129, 129);
     color: white;
+    padding-top: 50px;
 }
 
 h2.lesson-sidebar {
@@ -342,15 +345,38 @@ span.list-group-item {
     color: white;
 }
 
+.cle{
+  text-align: justify;
+  margin-top: -70px;
+  width: 90%;
+}
+
+.lesson{
+  font-size: 15px;
+  text-decoration: none;
+}
+.lesson:hover{
+  color: #FF4080;
+}
+.c{
+  margin-left: 30px;
+  margin-right: 30px;
+}
 .tester{
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 150px;
-
   background-color: #FF4080;
   color: white;
   font-size: 20px;
-  margin: auto;
+  width: 50%;
+padding-left: 50px;
+text-decoration: none;
+}
+.tester:hover{
+  background-color: white;
+  color: #FF4080;
+  border: 1px solid #FF4080;
+
 }
 a.disabled{
   pointer-events: none;
@@ -359,32 +385,38 @@ a.disabled{
 
 
 @media screen and (min-width:320px) and (max-width:978px){
-h1.lesson-module-title {
-    font-size: 2.2rem!important;
-    line-height: 1.25!important;
+.lesson-module-title {
+     font-size: medium;
+    /*line-height: 1.25!important;
     letter-spacing: normal!important;
-    margin-top: 8px;
+    margin-top: 8px; */
 }
 
 iframe {
-    width: 370px !important;
+    width: 100% !important;
 }
 
-p.a_propos_desc {
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: Google Sans,Arial,sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.67;
-    letter-spacing: normal;
-    padding-right: 135px;
-    margin-top: 20px;
-    color: #9aa0a6;
-    position: relative;
+
+}
+
+@media(max-width:768px){
+
+.lesson-module-title {
+    text-align: center;
+    font-size: 25px;
+     text-indent: 10px; 
+     margin-top: -20px;
+
+}
+.tester{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #FF4080;
+  color: white;
+  font-size: 15px;
+  width: 50%;
+padding-left: 20px;
+text-decoration: none;
 }
 }
  

@@ -8,8 +8,35 @@
 
 .lead{
   margin-bottom: 30px;
+  text-align: justify;
+}
+.bouton{
+  text-decoration: none;
+  color: black;
+}
+.icone{
+  width: 15px;
+  height: 15px;
+
+}
+.ic{
+  margin-top: 10px;
 }
 
+
+
+.detail{
+  border: 1px solid rgb(219, 219, 219);
+  padding: 10px;
+  transition: all 0.5s ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.detail:hover{
+  transform: scale(1.1); 
+}
 .jumbotron-heading{
   font-size: 30px;
 }
@@ -45,11 +72,10 @@ span.detail_cours_contenu {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: Google Sans,Arial,sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
     font-style: normal;
     font-stretch: normal;
-    line-height: 2.3rem;
     letter-spacing: normal;
     font-weight: 500;
     letter-spacing: 1.3px;
@@ -310,7 +336,10 @@ a.module-info__link {
 .module-info__link:hover {
     color: #0c3a77 !important;
 }
-
+.rowdetail{
+  text-decoration: none;
+  color: black;
+}
 .progress-circle {
   background-color: #ddd;
   border-radius: 50%;
@@ -319,6 +348,7 @@ a.module-info__link {
   margin: 4rem 2rem 0;
   position: relative;
   width: 8rem;
+  margin-top: 5px;
 }
 .progress-circle[data-progress="0"]:after {
   background-image: linear-gradient( 90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(90deg, #0083ff 50%, #ddd 50%, #ddd);
