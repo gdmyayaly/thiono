@@ -8,9 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit{
   title = 'Front';
-  constructor(private admin:AlldataService){}
+  constructor(public admin:AlldataService){}
   ngOnInit(){
     this.admin.cargementpage();
-
   }
 }

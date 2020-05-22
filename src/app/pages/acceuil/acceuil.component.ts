@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlldataService } from 'src/app/service/alldata.service';
 
 @Component({
   selector: 'app-acceuil',
@@ -9,9 +10,10 @@ import { Component, OnInit } from '@angular/core';
 
 export class AcceuilComponent implements OnInit {
 
-  constructor() { }
+  constructor(private langue:AlldataService) { }
 
   ngOnInit(): void {
+    this.langue.langue=false;
   }
 
 }

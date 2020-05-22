@@ -13,11 +13,14 @@ export class AlldataService {
   public modules=[
     {id:1,titre:'',chapitre:[]}
   ]
+  public langue: boolean;
+
   public isconnecter:boolean=false;
   constructor() { }
   cargementpage(){
     if (localStorage.getItem('token')) {
       this.isconnecter=true;
+    
     }
   }
   public rt=[

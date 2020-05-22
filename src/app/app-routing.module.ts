@@ -10,8 +10,10 @@ import { AcceuilComponent } from './pages/acceuil/acceuil.component';
 
 
 const routes: Routes = [
-  {path:'',component:HomesComponent},
+  {path:'',component:AcceuilComponent},
   {path:'cours',component:CoursComponent},
+  {path:'home',component:HomesComponent},
+
   {path:'onecour',component:OnecourComponent},
   {path:'login',component:LoginComponent},
   {path:'lesson',component:LessonComponent},

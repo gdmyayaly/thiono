@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlldataService } from 'src/app/service/alldata.service';
 
 @Component({
   selector: 'app-homes',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private langue:AlldataService) { }
 
   ngOnInit(): void {
+    this.langue.langue=true;
   }
 
 }
