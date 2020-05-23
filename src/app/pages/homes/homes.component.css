@@ -30,17 +30,35 @@ h2.etapes-titre {
     justify-content: center;
 }
 
-img.etapes-img {
-    width: auto;
-    height: 5rem;
+img.etapes-img1 {
+    /* width: 550px;
+    height: 250px;
     display: block;
-    margin-right: 30px;
-    margin-top: -15px;
+    margin-right: 10px;
+    margin-top: -65px; */
+    padding-top: 0;
+}
+
+img.etapes-img2 {
+    /* width: 500px;
+    height: 100px;
+    display: block;
+    margin-right: 10px;
+    margin-top: -15px; */
+    padding-top: 0;
+}
+img.etapes-img3 {
+    /* width: 400px;
+    height: 150px;
+    display: block;
+    margin-right: 10px;
+    margin-top: -35px; */
+    padding-top: 0;
 }
 h3.etapes-contenu-titre {
     margin: 0 0 1.5rem;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #414141;
 }
@@ -50,6 +68,7 @@ h2.text-center {
 }
 .etapes{
     margin-bottom: 50px;
+    margin-top: -100px;
 }
     .boutton{
         background-color: #FF4080;
@@ -57,4 +76,14 @@ h2.text-center {
     }
     a{
         color: black;
+    }
+
+
+    .etapes-desc{
+        text-align: justify;
+    }
+
+
+    .etapes-content{
+        margin-top: 100px;
     }
