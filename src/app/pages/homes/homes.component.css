@@ -94,11 +94,10 @@ h2.text-center {
 
 
   @media(max-width:768px){
-
    .iframe{
        width: 320px;
        height: 380px;
-       margin-top: -100px;
+       /* margin-top: -100px; */
    }
 
    h2.text-center {
