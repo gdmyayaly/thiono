@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
     if (donner.username=="user" && donner.password=="user") {
       localStorage.setItem('token','welcome123');
       this.admin.isconnecter=true;
-      this.router.navigate(['/'])
+      this.router.navigate(['/onecour'])
     }
     else{
       alert("login ou password incorrect")

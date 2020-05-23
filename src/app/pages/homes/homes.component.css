@@ -39,6 +39,9 @@ img.etapes-img1 {
     padding-top: 0;
 }
 
+.block1{
+    display: none;
+}
 img.etapes-img2 {
     /* width: 500px;
     height: 100px;
@@ -87,3 +90,58 @@ h2.text-center {
     .etapes-content{
         margin-top: 100px;
     }
+
+
+
+  @media(max-width:768px){
+
+   .iframe{
+       width: 320px;
+       height: 380px;
+       margin-top: -100px;
+   }
+
+   h2.text-center {
+ margin-top: -50px;
+    font-size: 2rem;
+}
+.col-md-4.etapes-contenu {
+    margin-bottom: -50px;
+}
+
+img.img1 {
+    width: 100px;
+    height: 250px;
+    display: block;
+    margin-right: 10px;
+    margin-top: 30px;
+
+    padding-top: 0;
+}
+
+img.img2 {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-right: 10px;
+    margin-top: 80px;
+    padding-top: 0;
+}
+img.img3 {
+     width: 100px;
+    height: 150px;
+    display: block;
+    margin-right: 10px;
+    margin-top: 60px;
+
+    padding-top: 0;
+}
+
+.block0{
+    display: none;
+}
+.block1{
+    display: block;
+}
+    }
+     
