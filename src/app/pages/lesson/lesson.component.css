@@ -294,6 +294,8 @@ nav.sidebar {
   background-color: #FF4080;
   border: 1px solid #FF4080;
   color: white;
+  padding: 10px;
+  margin-left: 20px;
 }
 
 .bte{
@@ -301,6 +303,8 @@ nav.sidebar {
   border: 1px solid #FF4080;
   color: white;
   padding: 10px;
+    margin-left: 20px;
+
 }
 
 .fin{

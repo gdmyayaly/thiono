@@ -16,6 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { LessonComponent } from './pages/lesson/lesson.component';
 import { QuizzComponent } from './pages/quizz/quizz.component';
 import { AcceuilComponent } from './pages/acceuil/acceuil.component';
+import { PlanformationComponent } from './pages/planformation/planformation.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { AcceuilComponent } from './pages/acceuil/acceuil.component';
     LoginComponent,
     LessonComponent,
     QuizzComponent,
-    AcceuilComponent
+    AcceuilComponent,
+    PlanformationComponent
   ],
   imports: [
     BrowserModule,

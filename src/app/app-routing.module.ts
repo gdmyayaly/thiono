@@ -7,13 +7,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { LessonComponent } from './pages/lesson/lesson.component';
 import { QuizzComponent } from './pages/quizz/quizz.component';
 import { AcceuilComponent } from './pages/acceuil/acceuil.component';
+import { PlanformationComponent } from './pages/planformation/planformation.component';
 
 
 const routes: Routes = [
   {path:'',component:AcceuilComponent},
   {path:'cours',component:CoursComponent},
   {path:'home',component:HomesComponent},
-
+  {path:'planformation',component:PlanformationComponent},
   {path:'onecour',component:OnecourComponent},
   {path:'login',component:LoginComponent},
   {path:'lesson',component:LessonComponent},

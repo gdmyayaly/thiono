@@ -1,5 +1,22 @@
+<style>
+    .container-fluid{
+        background-image: url("assets/growgirls.png"); 
+        background-size: cover; 
+        background-repeat: no-repeat;
 
-<div class="container">
+    }
+
+    @media(max-width:768px){
+        .container-fluid{
+        background-image: url("assets/gg.png"); 
+        background-size: cover; 
+        background-repeat: no-repeat;
+
+    }
+    }
+  
+</style>
+<div class="container-fluid" >
     <div class="imagegrow row">
         <div class="col-md-4"></div>
         <div class=" col-md-2">
@@ -49,7 +66,7 @@
     </div> -->
     <div class="row mt-2 bl">
         <div class="col-6 col-md-6 ble">
-            <div class="card" style="padding-top: 40px;border-radius: 15px;">
+            <div class="carte1" style="padding-top: 40px;border-radius: 15px;">
                 <a routerLink="/home">   <img class="image"src="assets/fr.png" width="150" height="100" alt=""> </a> 
                 <div class="card-body">
                     <a routerLink="/home">   <h3 class="card-title" style="text-align: center;font-size: 25px;">Francais</h3> </a> 
@@ -57,10 +74,10 @@
             </div>
         </div>
         <div class="col-6 col-md-6 ble2">
-         <div class="card" style="padding-top: 40px;border-radius: 15px;">
-            <a routerLink="/home"> <img class="image"src="assets/sn.png" width="150" height="100" alt=""> </a> 
+         <div class="carte" style="padding-top: 40px;border-radius: 15px;">
+            <a routerLink="/home"> <img class="image2"src="assets/sn.png" width="150" height="100" alt=""> </a> 
             <div class="card-body">
-                <a routerLink="/home">    <h3 class="card-title" style="text-align: center;font-size: 25px;">Wolof</h3> </a> 
+                <a routerLink="/home">    <h3 class="card-title" style="text-align: center;font-size: 25px; margin-left: -30px;">Wolof</h3> </a> 
             </div>
             </div>
         </div>

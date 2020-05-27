@@ -188,6 +188,7 @@
 
 .blockmobile{
     display: block;
+
 }
 
 .blocmbacke{
@@ -203,6 +204,11 @@
 }
 .titre{
     padding-top: 50px;
+}
+.image1{
+    height: 120px;
+    margin-top: 20px;
+    width: 100ps;
 }
 .titre1{
     display: none;

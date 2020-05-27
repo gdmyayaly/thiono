@@ -1,0 +1,75 @@
+
+<div class="container">
+    <div class="row">
+        <h1 class="titre">Mon plan de formation</h1> 
+  
+        <h3 class="desc">Effectuez le suivi de tous les cours que vous avez ajoutés. Lancez-vous dès maintenant !</h3>
+
+    </div>
+
+    
+
+          
+</div>
+<div class="tete">
+
+</div>
+<div class="container cards">
+    <div class="col-xl-12 col-lg-6 col-md-12 col-sm-12 col-12 col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="card">
+            <div class="card-header tab-regular">
+                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="card-tab-1" data-toggle="tab" href="#card-1" role="tab" aria-controls="card-1" aria-selected="true">(1) En cours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="card-tab-2" data-toggle="tab" href="#card-2" role="tab" aria-controls="card-2" aria-selected="false">(0) Terminé</a>
+                    </li>
+               
+                </ul>
+            </div>
+            <div class="card-body">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="card-1" role="tabpanel" aria-labelledby="card-tab-1">
+                        <div class="row r " >
+                            <div class="col-md-3 col-lg-3 col-sm-12 mb-3 block" *ngFor="let item of alldata.cours">
+                                <a href="javascript:void(0);" (click)="choice()">
+                                <div class="card">
+                                    <img src="{{item.image}}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">{{item.titre}}</h3>
+                                        <hr>
+                                        <p class="card-text niveauxtitre">
+                                            <img src="assets/icon/interface.png"  class="icone" alt="">
+                                            <span class="module">
+                                                <span class="modules">Module(s) :</span> <span>{{item.module}}</span>
+                                            </span>
+                                            <img src="assets/icon/wall-clock.png"   class="icone" alt="">
+                                            <span class="heure">
+                                               <span class="heures">Heure(s) :</span>  <span>{{item.heure}}</span>
+                                            </span>
+                                        </p>
+                                        <p class="niveaux">
+                                            <small class="text-red text-level">Niveau: <b>{{item.niveau}}</b></small>
+                                        </p>
+                                        <div class="row">
+                                            <i class="rien material-icons">arrow_forward</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            </div>
+             
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="card-2" role="tabpanel" aria-labelledby="card-tab-2">
+                        
+                    </div>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
