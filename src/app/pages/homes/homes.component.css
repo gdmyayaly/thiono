@@ -96,9 +96,9 @@ h2.text-center {
   @media(max-width:768px){
 
    .iframe{
-       width: 320px;
+       width: 340px;
        height: 380px;
-       margin-top: -100px;
+       margin-top: -50px;
    }
 
    h2.text-center {
@@ -112,30 +112,27 @@ h2.text-center {
 img.img1 {
     width: 100px;
     height: 250px;
-    display: block;
-    margin-right: 10px;
-    margin-top: 30px;
-
+ margin: auto;
+ margin-top: 20px;
     padding-top: 0;
 }
-
-img.img2 {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin-right: 10px;
-    margin-top: 80px;
-    padding-top: 0;
+.img{
+    margin-bottom: 20px;
+    margin-top: -60px;
 }
-img.img3 {
-     width: 100px;
-    height: 150px;
-    display: block;
-    margin-right: 10px;
-    margin-top: 60px;
-
-    padding-top: 0;
+.etapes-desc{
+    text-align: justify;
+    margin-top: -50px;
 }
+h3.etapes-contenu-titre {
+    margin:auto;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #414141;
+    margin-top: -90px;
+}
+
 
 .block0{
     display: none;

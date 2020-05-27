@@ -13,7 +13,7 @@
   }
 
   .video{
-    margin-top: -105px;
+    margin-top: -35px;
   }
   .widget canvas,
   .widget .labels {
@@ -255,7 +255,9 @@ span.detail_cours_contenu {
   letter-spacing: normal;
   color: #5f6368;
 }
-
+.sidebar{
+  margin-top: 70px;
+}
 
 nav.sidebar {
     -webkit-transition: margin 200ms ease-out;
